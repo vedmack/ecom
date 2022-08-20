@@ -11,7 +11,7 @@ services:
       customnetwork:
         ipv4_address: 172.20.0.2
     ports:
-      - '27017:27017'
+      - '27018:27017'
   server:
     container_name: ecom_server_cont
     image: danielreznick/ecomserver:latest
