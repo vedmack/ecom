@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  mongo:
+    container_name: ecom_mongo_db_cont
+    image: mongo:latest
+    restart: always
+    volumes:
+      - ./data:/data/db
+    networks:
+      customnetwork:
+        ipv4_address: 172.20.0.2
+    ports:
+      - '27017:27017'
+  server:
+    container_name: ecom_server_cont
+    image: danielreznick/ecomserver:latest
+    build:
+      context: server
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    networks:
+      customnetwork:
+        ipv4_address: 172.20.0.3
+    ports:
+      - 3000:3000
+networks:
+  customnetwork:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
