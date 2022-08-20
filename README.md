@@ -22,6 +22,8 @@ Features:
 - External API
    - Get products by shopper http://localhost:3000/eapi/pbys/ (GET) where shopper id is mandatory follows by optional limit/category/brand
    - Get shoppers by product http://localhost:3000/eapi/sbyp/ (GET) where product id is mandatory follows by optional limit
+   - Get all products (GET) http://localhost:3000/eapi/products
+   - Get all shoppers (GET) http://localhost:3000/eapi/shoppers
 - Store to local MongoDB server 
 
 
