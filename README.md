@@ -17,11 +17,11 @@ Features:
 =====
 
 - Internal API
- - Create product http://localhost:3000/iapi/product (POST) with proper JSON as input
- - Create shopper http://localhost:3000/iapi/shopper (POST) with proper JSON as input
+   - Create product http://localhost:3000/iapi/product (POST) with proper JSON as input
+   - Create shopper http://localhost:3000/iapi/shopper (POST) with proper JSON as input
 - External API
- - Get products by shopper http://localhost:3000/eapi/pbys/ (GET) where shopper id is mandatory follows by optional limit/category/brand
- - Get shoppers by product http://localhost:3000/eapi/sbyp/ (GET) where product id is mandatory follows by optional limit
+   - Get products by shopper http://localhost:3000/eapi/pbys/ (GET) where shopper id is mandatory follows by optional limit/category/brand
+   - Get shoppers by product http://localhost:3000/eapi/sbyp/ (GET) where product id is mandatory follows by optional limit
 - Store to local MongoDB server 
 
 
