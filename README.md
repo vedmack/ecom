@@ -7,7 +7,7 @@ Install / Run instructions
 
 - Fork / Download repo
 - Enter server folder and run the following commands
-   - npm install (to install are dependencies)
+   - npm install (to install the dependencies)
    - node index.js
 
 - Backend/Server Runs on http://localhost:3000/
